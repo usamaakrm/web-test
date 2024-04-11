@@ -2,6 +2,22 @@
     font-family: "Readex Pro", sans-serif;
     line-height: 1.75;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 body {
     font-size: 1rem;
     color: #141D28;
