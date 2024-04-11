@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - USA Funding Applications</title>
+    <!-- Bootstrap 5 styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fontawesome icon--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- External style sheet ref -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Font file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- External script ref -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#navbar").load("navbar.htm");
+            $("#footer").load("footer.htm");
+            setTimeout(() => {
+                $('.navbar-nav .nav-item').removeClass('active');
+                // change menu active class
+                var url = window.location.href.split('/');
+                $(`a[href="${url[url.length-1]}"]`).addClass('active');
+            }, 100);            
+        });
+    </script> 
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="navbar"></div>
+
+    </div>
+
+    <section class="hero-section">
+
+        <div class="container">
+
+            <div class="row mt-5">
+
+                <div class="col-xl-4 col-md-6 align-content-center">
+    
+                    <div class="ps-lg-5">
+    
+                        <h1 class="fw-bold lh-base"> To Future<br> Of Funding.</h1>
+    
+                        <h6 class="text-secondary fw-normal">Bringing consumer-like experience into <br> the world of robust funding products</h6>
+    
+                        <button class="text-white btn rounded-pill req-btn btn-lg py-2 ps-3 pe-4 fs-6 mt-3">Request a demo</button>
+
+                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-3">
+
+                            <img src="/assets/images/partner-3.png" class="img-fluid mt-3 me-3 h-100">
+
+                            <img src="/assets/images/partner-2.png" class="img-fluid mt-3 me-3 h-100">
+
+                            <img src="/assets/images/partner-1.png" class="img-fluid mt-3 me-3 h-100">
+
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="col-xl-8 col-md-6 text-center">
+    
+                    <img src="./assets/images/banner-image.png" style="max-width: 100%;" class="mt-5 mt-md-0">
+    
+                </div>
+    
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="hiw-section">
+
+        <div class="container">
+
+            <h2 class="text-center mb-3">Here's how it works</h2>
+
+            <h5 class="text-center text-secondary fw-light">
+
+                <b>USA</b> Funding Applications is an online funding application system that gives <br>
+
+                you access to over 20,000 <b>APPLICATION SOURCES</b>, including <b>GRANTS</b>.
+            
+            </h5>
+
+            <div class="row mt-3">
+
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <h4>REGISTER</h4>
+
+                        <img src="./assets/images/register.png">
+
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <h4>RESEARCH</h4>
+
+                        <img src="./assets/images/research.png">
+
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card">
+
+                        <h4>APPLY</h4>
+
+                        <img src="./assets/images/apply.png">
+
+                    </div>
+                    
+                </div>
+
+
+            </div>            
+
+        </div>
+
+    </section>
+
+    <section class="product-section">
+
+        <div class="container">
+
+            <h2 class="text-center">All our funding products </h2>
+
+            <div class="row justify-content-center mt-3">
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+
+                    <div class="card">
+                        
+                        <img src="./assets/images/small-business.png" alt="">
+                        
+                        <h5 class="mt-4"> Business </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+
+                    <div class="card">
+                        
+                        <img src="./assets/images/personal.png" alt="">
+                        
+                        <h5 class="mt-4"> Personal </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+
+                    <div class="card">
+                        
+                        <img src="./assets/images/community.png" alt="">
+                        
+                        <h5 class="mt-4"> Community </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+
+                    <div class="card">
+                        
+                        <img src="./assets/images/education.png" alt="">
+                        
+                        <h5 class="mt-4"> Education </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+
+                    <div class="card">
+                        
+                        <img src="./assets/images/real estate.png" alt="">
+                        
+                        <h5 class="mt-4"> Real Estate </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pt-3">
+        
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6 align-self-center">
+    
+                    <h3 class="fw-bold">Compare The Best Antivirus <br> Solutions For Your Devices</h3>
+    
+                    <p class="lh-lg text-start">Macs are expensive machines. It would be a shame to have yours compromised in the event of a virus or hacker attack. Fortunately, Apple devices are not overlooked by major cyber-security companies. As there are plenty of solutions available, these reviews will help you choose the right antivirus solution for your Mac. Whether you’re looking to protect a desktop computer or MacBook, these solutions offer protection from all of the latest viruses with ease.</p>
+    
+                    <button class="btn btn-lg text-white mt-4 py-3 px-4" style="font-size: 0.75rem;background: #5479F7;">Learn more</button>
+    
+                </div>
+
+                <div class="col-lg-6">
+
+                    <img src="/assets/images/coin-box-holding.png" class="img-fluid">
+
+                </div>
+    
+            </div>            
+
+        </div>
+
+    </section>    
+    
+    <section class="funding-cate-section">
+
+        <div class="container">
+
+            <h3 class="text-center fw-600 pb-3"> Explore a vast array of funding categories, each offering over <br> 20,000 applications ready for your consideration! </h3>
+
+            <div class="row mt-5">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/business.png">
+
+                            </div>
+
+                            <h5>Business</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/community assistance.png">
+
+                            </div>
+
+                            <h5>Community Assistance</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/education.png">
+
+                            </div>
+
+                            <h5>Education</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/home buyers.png">
+
+                            </div>
+
+                            <h5>Home Buyers</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/home repairs.png">
+
+                            </div>
+
+                            <h5>Home Repairs</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/inventions.png">
+
+                            </div>
+
+                            <h5>Inventions</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/minorities.png">
+
+                            </div>
+
+                            <h5>Minorities</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/non-profit.png">
+
+                            </div>
+
+                            <h5>Non-Profit</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body px-4 d-flex align-items-center">
+
+                            <div class="icon-box">
+
+                                <img src="./assets/images/icons/real estate.png">
+
+                            </div>
+
+                            <h5>Real Estate</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="client-section">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">Our happy clients say about us</h2>
+
+            <div class="row justify-content-center position-relative">
+
+                <div class="bg-linear position-absolute"></div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card p-4 my-3 border-0 shadow">
+    
+                        <div class="d-flex mb-2">
+    
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span> <br>
+    
+                        </div>
+    
+                        <p>“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</p>
+
+                        <div class="d-flex align-content-center">
+
+                            <div>
+
+                                <img src="./assets/images/users/user-2.png" class="rounded-circle">
+
+                            </div>
+
+                            <div class="ms-3">
+
+                                <h6 class="mb-0">John Doe</h6>
+
+                                <p class="text-secondary">CEO, Apple Inc.</p>
+
+                            </div>
+
+                        </div>                        
+    
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card p-4 my-3 border-0 shadow">
+    
+                        <div class="d-flex mb-2">
+    
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span> <br>
+    
+                        </div>
+    
+                        <p>“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”</p>
+
+                        <div class="d-flex align-content-center">
+
+                            <div>
+
+                                <img src="./assets/images/users/user-1.png" class="rounded-circle">
+
+                            </div>
+
+                            <div class="ms-3">
+
+                                <h6 class="mb-0">John Doe</h6>
+
+                                <p class="text-secondary">CEO, Apple Inc.</p>
+
+                            </div>
+
+                        </div>                        
+    
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card p-4 my-3 border-0 shadow">
+    
+                        <div class="d-flex mb-2">
+    
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span> <br>
+    
+                        </div>
+    
+                        <p>“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”</p>
+
+                        <div class="d-flex align-content-center">
+
+                            <div>
+
+                                <img src="./assets/images/users/user-2.png" class="rounded-circle">
+
+                            </div>
+
+                            <div class="ms-3">
+
+                                <h6 class="mb-0">John Doe</h6>
+
+                                <p class="text-secondary">CEO, Apple Inc.</p>
+
+                            </div>
+
+                        </div>
+
+    
+                    </div>
+
+                </div>                
+
+            </div>
+
+            <div>
+
+                <p class="border-bottom border-2 text-center border-secondary mx-auto mt-5" style="width: fit-content;">
+                    
+                    Check all 2,157 reviews
+    
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="contact-section position-relative">
+
+        <img src="./assets/images/drop coin.png" class="position-absolute start-0 top-0 bottom-0 my-auto d-none d-xl-block">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-xl-5 col-lg-6 col-md-9 text-center">
+
+                    <h2 class="text-center text-black fw-bold mb-4">Signup</h2>
+
+                    <form type="action">
+                    
+                        <input type="text" class="form-control shadow-none py-2" placeholder="Name" required>
+        
+                        <input type="text" class="form-control shadow-none py-2 mt-3" placeholder="Email" required>
+        
+                        <input type="text" class="form-control shadow-none py-2 mt-3" placeholder="Mobile No" required>
+        
+                        <div class="d-flex mt-5"> 
+        
+                            <div class="form-check">  
+        
+                                <input class="form-check-input shadow-none" type="checkbox" id="flexCheckDefault">
+        
+                                <label class="form-check-label small text-start" for="flexCheckDefault">
+                                    By Clicking, I Agree To The Terms Of This Site And Our Privacy Policy, And Am Providing My Electronic Signature Authorizing USA Funding Applications And It Affiliates To Contact Me By Email, Text, Or Phone Regarding My Funding Applications Service Account With Any New Funding Services Or Sources That May Become Available.
+                                </label>
+        
+                            </div>
+        
+                        </div>
+        
+                        <button class="btn btn-lg mt-4 mx-auto px-5 py-3 text-white" style="font-size: 0.95rem;background: #5479F7;">Submit</button>
+        
+                    </form>                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <img src="./assets/images/hold money bag.png" class="position-absolute top-0 bottom-0 my-auto d-none d-lg-block end-0">
+
+    </section>
+
+    <div id="footer"></div>
+    
+</body>
+</html>
