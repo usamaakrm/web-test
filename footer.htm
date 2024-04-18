@@ -1,3 +1,5 @@
+
+
 <section class="footer-section bg-white pt-5 pb-0">
 
     <div class="container">
@@ -6,7 +8,7 @@
 
             <div class="col-xxl-4 col-xl-2 col-lg-3 col-md-4">
 
-                <img src="/assets/images/logo.png" alt="logo" class="img-fluid">
+                <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
 
             </div>
 
@@ -71,5 +73,47 @@
         <p class="text-secondary small text-center">Copyright 2019 USA Funding Applications</p>
 
     </div>
+
+
+    <div id="signuppage"></div>
+
+    <script>
+
+    $(function(){
+            $("#signuppage").load("login.htm");
+            setTimeout(() => {
+                $('.navbar-nav .nav-item').removeClass('active');
+                // change menu active class
+                var url = window.location.href.split('/');
+                $(`a[href="${url[url.length-1]}"]`).addClass('active');
+            }, 100);            
+
+        });
+    </script>
+
+    <script>
+
+     function openLogin() {
+          var modal = document.getElementById("myModal");
+          
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks the button, open the modal 
+          modal.style.display = "block";
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+          modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+           }
+        }
+    </script>
 
 </section>

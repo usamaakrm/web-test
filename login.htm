@@ -1,0 +1,96 @@
+
+<section class="signuppage-section">
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sx modal-fullscreen-sm-up">
+        <div class="modal-content">
+          <div class="modal-header">
+           
+            
+            <div class="row" style="display: flex; width: 100%; justify-content: center; align-items: center;">
+              <div style="
+              display: flex;
+              align-items: left;
+              justify-content: space-between;
+              flex-wrap: nowrap;
+              flex-direction: column;">
+               <img src="./assets/images/logo.png" width="150px" alt="logo" class="img-fluid">
+            </div>
+            </div>
+  
+            <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"
+              style="display: flex; justify-content: end;"> </button>
+          </div>
+  
+  
+  
+          <div class="modal-body">
+  
+            <div class="modal-split">
+  
+              <form type="action" id="loginSumbit">
+  
+                <h2 style="font-weight: 800;">Login</h2>
+  
+                
+                <div class="col mb-2">
+  
+                    <div class="form-group">
+  
+                      <label for="first-name" class="col-form-label-lg">User Name <span
+                          class="text-danger">*</span></label>
+  
+                      <input name="userName" type="text" class="form-control  botder shadow-none" required>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="col mb-2">
+  
+                    <div class="form-group">
+  
+                      <label for="last-name" class="col-form-label-lg">Password<span
+                          class="text-danger">*</span></label>
+  
+                      <input name="password" type="password" class="form-control   botder shadow-none" required>
+  
+                    </div>
+  
+                  </div>
+             
+                  <div class="row">
+                    <div class="col text-center">
+                        <button  class="btn btn-xl text-white mt-4 py-2 px-4 text-center" style="font-size: 0.75rem;background: #5479F7;">Submit</button>
+                    </div>
+                  </div>
+
+              </form>
+  
+            </div>
+             
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+    <script>
+      
+         const form = document.getElementById('loginSumbit');
+         form.addEventListener('submit', function (event) {
+            var modal = document.getElementById("myModal");
+            // form.elements['userName'].value = "";
+            // form.elements['password'].value = "";
+            // modal.style.display = "block";
+            modal.style.display = "none";
+            alert("Incorrect login credentials")
+            resetForm()
+         });
+        
+         function resetForm() {
+            document.getElementById("loginSumbit").reset();
+          }
+    
+    </script>
+  
+  </section>

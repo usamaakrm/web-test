@@ -18,6 +18,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- External script ref -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./js/signup.js"></script>
     <script> 
         $(function(){
             $("#navbar").load("navbar.htm");
@@ -28,10 +30,126 @@
                 var url = window.location.href.split('/');
                 $(`a[href="${url[url.length-1]}"]`).addClass('active');
             }, 100);            
+
         });
+
+        function scrollFunction() {
+            const element = document.getElementById("id_signup");
+            element.scrollIntoView();
+        }
+
+    
+
+        $(document).ready(function(){
+            var hiddenSection = document.getElementById('hidden-section');
+            hiddenSection.style.display = 'none';
+          
+           var btn = document.getElementById("showHide");
+
+    
+          // When the user clicks the button, open the modal 
+           btn.onclick = function() {
+            var hiddenSection = document.getElementById('hidden-section');
+            if( hiddenSection.style.display == "none") {
+                hiddenSection.style.display = 'block';  
+                document.getElementById("showHide").innerHTML = '<a id="showHide"> <p class="border-bottom border-2 text-center border-secondary mx-auto mt-2" style="width: fit-content;color: #5479F7;">Less</p> </a>';
+            } else {
+                hiddenSection.style.display = 'none';
+                document.getElementById("showHide").innerHTML = '<a id="showHide"> <p class="border-bottom border-2 text-center border-secondary mx-auto mt-2" style="width: fit-content;color: #5479F7;">Click here</p> </a>';
+
+            }
+           }   
+           var elements = document.getElementsByClassName("assetClick");
+
+            var myFunction = function() {
+                  
+              window.location.href = "uncllaimed.htm"
+            };
+
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('click', myFunction, false);
+            }
+
+        
+        });
+        
     </script> 
 </head>
 <body>
+    <nav class="navbar shadow navbar-expand-lg py-3">
+
+        <div class="container">
+    
+            <div class="navbar-brand d-block">
+    
+                <a  href="./home.htm">
+                    
+                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                
+                </a>
+    
+            </div>
+    
+            <button class="navbar-toggler navbar_toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+                <span class="navbar-toggler-icon"></span>
+    
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+    
+                <ul class="navbar-nav">
+    
+                    <li class="nav-item">
+    
+                        <a class="nav-link pe-xxl-5 pe-xl-4" href="home.htm">Home</a>
+    
+                    </li>
+    
+                    <li class="nav-item">
+    
+                        <a  class="nav-link pe-xxl-5 pe-xl-4" href="uncllaimed.htm">Unclaimed Assets</a>
+    
+                    </li>
+    
+                    <li class="nav-item">
+    
+                        <a class="nav-link pe-xxl-5 pe-xl-4" href="faq.htm">FAQ</a>
+                
+                    </li>
+    
+    
+                    <li class="nav-item">
+    
+                        <a class="nav-link pe-xxl-5 pe-xl-4" href="about.htm">About</a>
+    
+                    </li>
+                        
+                    <!-- <li class="nav-item">
+    
+                        <a class="nav-link pe-xxl-5 pe-xl-4" href="#">Changelog</a>
+    
+                    </li> -->
+    
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0 align-self-lg-center">
+    
+                        <button onclick="openLogin()" class="btn bg-secondary-subtle text-dark px-3">Login</button>
+    
+                    </li>
+    
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0 align-self-lg-center">
+    
+                        <a href="home.htm#id_signup" class="btn bg-dark text-white px-3">Sign up</a>
+    
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+    </nav>
 
     <div class="container">
 
@@ -52,10 +170,12 @@
                         <h1 class="fw-bold lh-base"> To Future<br> Of Funding.</h1>
     
                         <h6 class="text-secondary fw-normal">Bringing consumer-like experience into <br> the world of robust funding products</h6>
-    
-                        <button class="text-white btn rounded-pill req-btn btn-lg py-2 ps-3 pe-4 fs-6 mt-3">Request a demo</button>
+                         <a href="./uncllaimed.htm">
+                        <button class="text-white btn rounded-pill req-btn btn-lg py-2 ps-3 pe-4 fs-6 mt-3 align-items-center">Check claim status</button>
 
-                        <div class="d-flex flex-wrap align-items-center justify-content-between mt-3">
+                         </a>
+
+                        <!-- <div class="d-flex flex-wrap align-items-center justify-content-between mt-3">
 
                             <img src="/assets/images/partner-3.png" class="img-fluid mt-3 me-3 h-100">
 
@@ -63,7 +183,7 @@
 
                             <img src="/assets/images/partner-1.png" class="img-fluid mt-3 me-3 h-100">
 
-                        </div>
+                        </div> -->
     
                     </div>
     
@@ -71,7 +191,7 @@
     
                 <div class="col-xl-8 col-md-6 text-center">
     
-                    <img src="./assets/images/banner-image.png" style="max-width: 100%;" class="mt-5 mt-md-0">
+                    <img src="./assets/images/banner-image.png" width="400" class="mt-5 mt-md-0">
     
                 </div>
     
@@ -81,60 +201,70 @@
 
     </section>
 
-    <section class="hiw-section">
+    <section class="hiw-section pb-0">
 
         <div class="container">
 
-            <h2 class="text-center mb-3">Here's how it works</h2>
-
-            <h5 class="text-center text-secondary fw-light">
-
-                <b>USA</b> Funding Applications is an online funding application system that gives <br>
-
-                you access to over 20,000 <b>APPLICATION SOURCES</b>, including <b>GRANTS</b>.
+            <h2 class="text-center fw-bold">Here's how it works</h2>
             
-            </h5>
+            <div id="hidden-section">
+                <h5 class="text-center text-secondary fw-light">
 
-            <div class="row mt-3">
-
-                <div class="col-md-4">
-
-                    <div class="card">
-
-                        <h4>REGISTER</h4>
-
-                        <img src="./assets/images/register.png">
-
+                    <b>USA</b> Funding Applications is an online funding application system that gives <br>
+    
+                    you access to over 20,000 <b>APPLICATION SOURCES</b>, including <b>GRANTS</b>.
+                
+                </h5>
+    
+                <div class="row mt-3">
+    
+                    <div class="col-md-4">
+    
+                        <div class="card">
+    
+                            <h4 style="font-weight: bold;">REGISTER</h4>
+    
+                            <img src="./assets/images/employment-contract.png" id="sam">
+    
+                        </div>
+                        
                     </div>
-                    
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="card">
-
-                        <h4>RESEARCH</h4>
-
-                        <img src="./assets/images/research.png">
-
+    
+                    <div class="col-md-4">
+    
+                        <div class="card">
+    
+                            <h4 style="font-weight: bold;">RESEARCH</h4>
+    
+                            <img src="./assets/images/check-list.png" id="sam">
+    
+                        </div>
+                        
                     </div>
-                    
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="card">
-
-                        <h4>APPLY</h4>
-
-                        <img src="./assets/images/apply.png">
-
+    
+                    <div class="col-md-4">
+    
+                        <div class="card">
+    
+                            <h4 style="font-weight: bold;">APPLY</h4>
+    
+                            <img src="./assets/images/ab-testing.png" id="sam">
+    
+                        </div>
+                        
                     </div>
+    
+    
+                </div>  
+            </div>
+
+            <a  id="showHide"> <p class="border-bottom border-2 text-center border-secondary mx-auto mt-2" style="width: fit-content; color: #5479F7;">
                     
-                </div>
+                Click Here
 
+            </p> </a>
 
-            </div>            
+                      
 
         </div>
 
@@ -144,15 +274,15 @@
 
         <div class="container">
 
-            <h2 class="text-center">All our funding products </h2>
+            <h2 class="text-center fw-bold">Which sector owes you money?</h2>
 
             <div class="row justify-content-center mt-3">
 
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
 
                     <div class="card">
                         
-                        <img src="./assets/images/small-business.png" alt="">
+                        <img src="./assets/images/financial-institute.svg" alt="">
                         
                         <h5 class="mt-4"> Business </h5>
 
@@ -160,11 +290,11 @@
 
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
 
                     <div class="card">
                         
-                        <img src="./assets/images/personal.png" alt="">
+                        <img src="./assets/images/lock.svg" alt="">
                         
                         <h5 class="mt-4"> Personal </h5>
 
@@ -172,7 +302,7 @@
 
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <!-- <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
 
                     <div class="card">
                         
@@ -184,7 +314,7 @@
 
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
 
                     <div class="card">
                         
@@ -194,13 +324,14 @@
 
                     </div>
 
-                </div>
+                </div> -->
 
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                
+                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
 
                     <div class="card">
                         
-                        <img src="./assets/images/real estate.png" alt="">
+                        <img src="./assets/images/government.svg" style="padding-bottom: 6px;" alt="">
                         
                         <h5 class="mt-4"> Real Estate </h5>
 
@@ -220,21 +351,27 @@
 
             <div class="row justify-content-center">
 
-                <div class="col-lg-6 align-self-center">
+                <div class="col-lg-8">
     
-                    <h3 class="fw-bold">Compare The Best Antivirus <br> Solutions For Your Devices</h3>
+                    <h3 class="fw-bold text-center">Compare The Best Antivirus <br> Solutions For Your Devices</h3>
     
-                    <p class="lh-lg text-start">Macs are expensive machines. It would be a shame to have yours compromised in the event of a virus or hacker attack. Fortunately, Apple devices are not overlooked by major cyber-security companies. As there are plenty of solutions available, these reviews will help you choose the right antivirus solution for your Mac. Whether you’re looking to protect a desktop computer or MacBook, these solutions offer protection from all of the latest viruses with ease.</p>
+                    <p class="lh-lg text-center">Macs are expensive machines. It would be a shame to have yours compromised in the event of a virus or hacker attack. Fortunately, Apple devices are not overlooked by major cyber-security companies. As there are plenty of solutions available, these reviews will help you choose the right antivirus solution for your Mac. Whether you’re looking to protect a desktop computer or MacBook, these solutions offer protection from all of the latest viruses with ease. It would be a shame to have yours compromised in the event of a virus or hacker attack. Fortunately, Apple devices are not overlooked by major cyber-security companies. </p>
     
-                    <button class="btn btn-lg text-white mt-4 py-3 px-4" style="font-size: 0.75rem;background: #5479F7;">Learn more</button>
+                     <div class="row">
+                        <div class="col text-center">
+                            <!-- <button class="btn btn-lg text-white mt-4 py-3 px-4 text-center" style="font-size: 0.75rem;background: #5479F7;">Learn more</button> -->
+                        </div>
+                      </div>
+
+                  
     
                 </div>
 
-                <div class="col-lg-6">
+                <!-- <div class="col-lg-6">
 
                     <img src="/assets/images/coin-box-holding.png" class="img-fluid">
 
-                </div>
+                </div> -->
     
             </div>            
 
@@ -566,24 +703,28 @@
 
             <div>
 
-                <p class="border-bottom border-2 text-center border-secondary mx-auto mt-5" style="width: fit-content;">
+
+                <a href="#id_signup" class="click_to_scroll"> <p class="border-bottom border-2 text-center border-secondary mx-auto mt-5" style="width: fit-content;">
                     
                     Check all 2,157 reviews
     
-                </p>
+                </p> </a>
 
             </div>
-
 
         </div>
 
     </section>
 
-    <section class="contact-section position-relative">
-
-        <img src="./assets/images/drop coin.png" class="position-absolute start-0 top-0 bottom-0 my-auto d-none d-xl-block">
-
+    <section class="contact-section position-relative" id="id_signup">
+        
         <div class="container">
+
+        </div>
+
+        <div class="container position-relative">
+
+            <img src="./assets/images/drop coin.png" class="position-absolute start-0 top-0 bottom-0 my-auto d-none d-xl-block">
 
             <div class="row justify-content-center">
 
@@ -591,13 +732,13 @@
 
                     <h2 class="text-center text-black fw-bold mb-4">Signup</h2>
 
-                    <form type="action">
+                    <form type="action" id="signupForm">
                     
-                        <input type="text" class="form-control shadow-none py-2" placeholder="Name" required>
+                        <input type="text" name="name" class="form-control shadow-none py-2" placeholder="Name" required>
         
-                        <input type="text" class="form-control shadow-none py-2 mt-3" placeholder="Email" required>
+                        <input type="text" name="email" class="form-control shadow-none py-2 mt-3" placeholder="Email" required>
         
-                        <input type="text" class="form-control shadow-none py-2 mt-3" placeholder="Mobile No" required>
+                        <input type="text" name="phone" class="form-control shadow-none py-2 mt-3" placeholder="Mobile No" required>
         
                         <div class="d-flex mt-5"> 
         
@@ -621,13 +762,25 @@
 
             </div>
 
+            <img src="./assets/images/hold money bag.png" class="position-absolute top-0 bottom-0 my-auto d-none d-lg-block end-0">
+
         </div>
 
-        <img src="./assets/images/hold money bag.png" class="position-absolute top-0 bottom-0 my-auto d-none d-lg-block end-0">
-
+    
     </section>
 
-    <div id="footer"></div>
+    <div id="footer">
+            <ul class="flex">
+                <li><a href="./home.htm">Home</a></li>
+                <li><a href="./uncllaimed.htm">Unclaimed Assets</a></li>
+                <li><a href="./faq.htm">FAQ</a></li>
+                <li><a href="./about.htm">About</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+    </div>
+
+    
     
 </body>
 </html>
