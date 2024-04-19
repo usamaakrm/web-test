@@ -38,11 +38,12 @@ section {
     padding: 4rem 0rem;
 }
 .navbar {
-    background: #fff;
-    position: fixed;
-    width: 100% !important;
-    border-radius: 0.5rem;
-    z-index: 1050;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  border-radius: 0.5rem;
+  top: 20px;
+  z-index: 1050;
 }
 .hero-section {
     background: linear-gradient(135deg, #FBD7FF 10%, #FFDEC1 80%);
@@ -99,11 +100,36 @@ section {
     margin: 0 auto;
 }
 @media (max-width: 576px) {
-    .navbar {
-        left: 0;
-        border-radius: 0;
-        top: 0;
-    }
+  .navbar {
+      left: 0;
+      border-radius: 0;
+      top: 0;
+  }
+}
+@media (min-width: 576px) {
+  .navbar {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+      max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+      max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+      max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .navbar {
+      max-width: 1320px;
+  }
 }
 
 
