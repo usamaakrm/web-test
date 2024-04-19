@@ -105,37 +105,7 @@ section {
         top: 0;
     }
 }
-@media (min-width: 576px) {
-    .navbar {
-        max-width: 540px;
-    }
-}
-@media (min-width: 768px) {
-    .navbar {
-        max-width: 720px;
-    }
-}
-@media (min-width: 992px) {
-    .navbar {
-      max-width: 100%;
-    }
-}
-@media (min-width: 1200px) {
-    .navbar {
-        max-width: 100%;
-    }
-}
-@media (min-width: 1400px) {
-    .navbar {
-      max-width: 100%;
-    }
-}
-@media screen and (max-width: 768px) {
-    .hiw-section .card img {
-        width: 160px;
-        height: 160px;
-    }
-}
+
 
 .product-section .card {
     /* background: linear-gradient(135deg, #fbd7ff96 10%, #ffdec187 80%); */
