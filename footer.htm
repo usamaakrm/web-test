@@ -117,3 +117,139 @@
     </script>
 
 </section> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body>
+    <div id="myModal" class="modal m-5">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="card-container background-light shadow-default">
+                <div class="row">
+                    <div class=" col-lg-8">
+                        <div class="model-card">
+                            <div class="row">
+                                <div
+                                    class="nine wide large screen twelve wide mobile nine wide tablet nine wide widescreen column">
+                                    <div class="text-align-center" style="padding-bottom: 10px; padding-left: 20px;">
+                                        <h3 style="color: #000000;"><span style="color: #5479F7;">USA FUNDING</span> GROUP
+                                        </h3>
+                                    </div>
+                                    <div class="" style="padding-bottom: 24px;padding-left: 20px;">
+                                        <h3 class="sc-kstqJO epkVnJ h3-small-header" data-test="ACTION">Let's
+                                            find your USA FUNDING Account</h3>
+                                    </div>
+                                    <div class="" style="padding-bottom: 24px;padding-left: 20px;">
+                                        <div class="sc-gKseQn dOkiGQ condensed-large" data-test="SUBTEXT">When logged in, you will be able to view new updates on your case and contact us with any questions.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-tem">
+                                    <div data-test="EMAIL_FORM">
+                                        <div data-test="form-active">
+                                            <form id="loginForm">
+                                                <div class="" style="padding-bottom: 24px;">
+                                                    <div class="sc-iwyWTf kqJPCn form-field"
+                                                        data-test="email-form-field">
+                                                        <div class="element">
+                                                            <div class="label-wrapper" data-test="form-label">
+                                                                <label class="sc-pGacB dTDWFm form-label"
+                                                                    data-test="form-label-text" for="email">Email<span
+                                                                        class="required">*</span></label>
+                                        
+                                                            </div>
+                                                            <div class="form-element-container">
+                                                                <div data-test="email" class="sc-ezredP inJoyt">
+                                                                    <div class="ui fluid input"><input id="email"
+                                                                            class="input_box" name="email" type="email"
+                                                                        required></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="element">
+                                                            <div class="label-wrapper" data-test="form-label">
+                                                                <label class="sc-pGacB dTDWFm form-label"
+                                                                    data-test="form-label-text" for="password">Password<span
+                                                                        class="required">*</span></label>
+                                        
+                                                            </div>
+                                                            <div class="form-element-container">
+                                                                <div data-test="password" class="sc-ezredP inJoyt">
+                                                                    <div class="ui fluid input"><input id="password"
+                                                                            class="input_box" name="password" type="password"
+                                                                        required></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button data-test="next-button" class="ui_button">Find my
+                                                    account</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 image-container logo-pop">
+                        <img src="./assets/images/logo.png" width="100%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script> 
+        
+        var modal = document.getElementById("myModal");
+
+          open("openModal")
+          open("openModals")
+          
+
+            function open(id) {
+                  // Get the button that opens the modal
+                  var btn = document.getElementById(id);
+                    // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    // // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+            }
+            const form = document.getElementById('loginForm');
+            form.addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the form from submitting
+
+            
+        
+                    // If all validations pass, submit the form
+                    // You may also choose to submit the form using AJAX here
+                    // form.submit();
+                    alert('We could not find any users with this email');
+                });
+    </script> 
+</body>
+</html>

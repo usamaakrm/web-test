@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - USA Funding Applications</title>
+    <!-- Bootstrap 5 styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fontawesome icon--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- External style sheet ref -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Font file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- External script ref -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#navbar").load("navbar.htm");
+            $("#footer").load("footer.htm");
+            setTimeout(() => {
+                $('.navbar-nav .nav-item').removeClass('active');
+                // change menu active class
+                var url = window.location.href.split('/');
+                $(`a[href="${url[url.length-1]}"]`).addClass('active');
+
+            }, 100);            
+        });
+    </script> 
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="navbar"></div>
+
+    </div>
+
+      <!-- FScreen-->
+
+      <section class="section section-sm top-5" id="download">
+        <div class="container">
+          <div class="row row-50 pp-left"><h3>Terms and Conditions</h3></div>
+          <div class="row row-50 justify-content-center justify-content-lg-start align-items-center">
+            <div class="col-md-12 col-lg-12">
+              <p class="mt-3 mb-3 wow">
+                The document provided outlines the Terms and Conditions governing the provision of services and products by Product Foresight to its clients. By utilizing the Product Foresight website, users agree to these Terms and Conditions, which also extend to various electronic communications such as SMS, email, or phone interactions between the website and end-users. Product Foresight reserves the right to revise this document at its discretion without individual user notification. Therefore, customers are encouraged to review the Terms and Conditions page before engaging on our platform.
+              </p>
+              <h4 class="wow">Acceptance Of The Terms Of Use:</h4>
+              <p class="mt-3 mb-3 wow"> This section delineates the terms of use for the Product Foresight Platform at [INSERT URL]. By accessing or using the platform, you agree to abide by these terms of use. If you are representing a Product Foresight product tester, you confirm your authority to bind that entity. Please carefully review these terms of use before using the platform. By accessing the platform or accepting the terms of use, you agree to comply with them, as well as our privacy notice. If you do not agree to these terms or notices, you may not access or use the platform.</p>
+              <h4 class="wow">Changes To The Terms Of Use:</h4>
+              <p class="mt-3 mb-3 wow"> Product Foresight reserves the right to modify these terms periodically, without prior notice, with the updated terms becoming applicable to you. We retain the authority to amend and update these terms of use at our discretion. Your continued use of the platform following the publication of revised terms of use signifies your acceptance and agreement to the modifications. It is your responsibility to periodically review this page to stay informed about any changes, as they hold legal significance for you.</p>
+              <p class="mt-3 mb-3 wow">Participants agree to receive communications from the survey platform regarding surveys, rewards, and other relevant information. </p>
+              <h4 class="wow">Disclaimer:</h4>
+              <p class="mt-3 mb-3 wow"> The content of this website is provided solely for product testing purposes and to gather feedback on upcoming products. The information displayed on this website is a compilation of various consumer-friendly products. However, the actions you choose to take with this information are at your discretion.</p> 
+              <h4 class="wow">Termination Orders:</h4>
+              <p class="mt-3 mb-3 wow"> Customers have the option to cancel their order at no charge and receive a full refund of the purchase price within 24 hours of placing the order. This policy offers customers flexibility and ensures a hassle-free experience, accommodating changes or reconsiderations shortly after placing an order. By providing this cancellation window, we aim to prioritize customer satisfaction and offer peace of mind during the purchase process.</p> 
+              <h4 class="wow">Shipping Charges:</h4>
+              <p class="mt-3 mb-3 wow"> Product Foresight charges a shipping fee for electronically delivering a purchased report from the website. The average shipping cost ranges from $1 to $15, depending on the state of residence of the product tester.</p> 
+              <h4 class="wow">Copyright Infringement: </h4>
+              <p class="mt-3 mb-3 wow"> This section underscores our commitment to notifying you if we detect any user-generated content on the platform that infringes on your copyright. If you identify any user contributions that you believe violate your copyright, please notify us by sending an email to [INSERT GMAIL] with a notice of copyright infringement. Product Foresight's policy is to terminate the accounts of users who repeatedly infringe on copyrights.</p> 
+              <h4 class="wow">Links From The Platform: </h4>
+              <p class="mt-3 mb-3 wow">This section emphasizes that any links to third-party websites and resources on the platform are utilized at your own risk, and Product Foresight disclaims responsibility for their use. If the platform includes links to external websites and resources provided by third parties, these links are offered solely for your convenience. We do not govern the content of these websites or resources and assume no liability for them or any resulting loss or damage from their use. If you opt to visit any third-party websites linked from the platform, you do so entirely at your own risk and are subject to the terms and conditions of those websites.</p> 
+              <h4 class="wow">Product Foresight Text Messaging Program: </h4>
+              <p class="mt-3 mb-3 wow">Our SMS campaign aims to update subscribers on current products, rewards, gift cards, points, surveys, as well as any related updates or alterations. The frequency of messages may vary but will not exceed 3 times per month.</p> 
+              <h4 class="wow">SMS Opt-Out:</h4>
+              <p class="mt-3 mb-3 wow">To opt-out, simply reply with STOP, and you will be promptly unsubscribed from Product Foresight's text messaging program with no further messages sent. Please note that carriers are not responsible for delayed or undelivered messages, and standard message and data rates may apply. Rest assured, mobile subscribers' phone numbers will NEVER be shared or sold to third parties. By engaging with the platform, you agree to adhere to these terms of use and the privacy policy.</p> 
+              <h4 class="wow">Charges And Wireless Carriers:</h4>
+              <p class="mt-3 mb-3 wow">Please be aware that message and data rates may apply. To understand the pricing plan for sending and receiving text messages on your phone, refer to your wireless carrier's service agreement or contact them directly. You acknowledge your responsibility for any incurred costs, including message, data, or subscription charges, associated with using the platform. Supported carriers include AT&T, T-Mobile, Sprint, Boost, Virgin Mobile, U.S. Cellular, Cricket, Alltel, Cincinnati Bell, Cellcom, C-Spire, nTelos, MetroPCS, and various smaller regional carriers. However, note that the platform may not be accessible on all wireless networks. Product Foresight retains the right to include or exclude any wireless carrier from the platform without prior notice. Neither Product Foresight nor mobile carriers are accountable for any delays, delivery issues, or message errors.</p> 
+              <p class="mt-3 mb-3 wow"><b>To Unsubscribe From The Service:</b> To discontinue receiving text messages from Product Foresight, simply text the word STOP in response to any of the messages you've received. This is the exclusive method for opting out. If the platform operates through a different number, send STOP to that number to opt out. Upon making your opt-out request, you may receive either a confirmation text or a request to specify which text message program your opt-out applies to (if you are subscribed to multiple programs). Please respond accordingly to finalize your opt-out. Please note that the text message platform may not recognize or respond to unsubscribe requests that do not include the STOP keyword command. By opting out, you agree that Product Foresight and its service providers bear no responsibility for failing to honor such requests. Furthermore, if you unsubscribe from one text message program, you may still receive messages from Product Foresight through other programs until you separately unsubscribe from those programs. Even if you withdraw your consent or opt out of the platform, these terms of use will still be applicable.</p> 
+              <p class="mt-3 mb-3 wow"><b>Last Modified:</b> June 14, 2023</p> 
+            </div>
+
+            
+            
+          </div>
+        </div>
+      </section>
+    
+
+    <div class="container">
+        
+        <ul class="flex">
+            <div class="col-xxl-4 col-xl-2 col-lg-3 col-md-4">
+                <img src="./assets/images/logo.png" alt="logo" class="img-fluid mt-3">
+            </div>
+            <li><a href="./home.htm">Home</a></li>
+            <li><a href="./uncllaimed.htm">Unclaimed Assets</a></li>
+            <li><a href="./faq.htm">FAQ</a></li>
+            <li><a href="./about.htm">About</a></li>
+            <li><a href="./terms-and-conditions.html">Terms and Conditions</a></li>
+            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+</div>
+
+</body>
