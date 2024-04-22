@@ -401,12 +401,14 @@ section {
 
   .width{
     width: 400px !important;
+    margin-top: -2rem;
   }
 
   .count-bottom{
-    margin-top: 10rem !important;
+    margin-top: 4rem !important;
     margin-bottom: -5rem !important;
   }
+
 
   .modal {
     position: fixed;
