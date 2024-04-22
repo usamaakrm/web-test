@@ -391,11 +391,12 @@ section {
   }
 
   .count-section {
-    font-size: 2rem !important;
+    font-size: .8rem !important;
   }
 
-  .dash{
+  .dash, .item-count{
     justify-content: center !important;
+    text-align: center !important;
   }
 
   .width{
@@ -548,4 +549,10 @@ section {
 
 .logo-pop{
   margin-left: -5rem !important;
+}
+
+.count-section{
+  background-color: #44B0FF;
+  margin: 0 !important;
+  width: 100% !important;
 }

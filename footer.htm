@@ -127,9 +127,9 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
-    <div id="myModal" class="modal m-5">
+    <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close mx-3">&times;</span>
             <div class="card-container background-light shadow-default">
                 <div class="row">
                     <div class=" col-lg-8">
@@ -190,7 +190,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button data-test="next-button" class="ui_button">Find my
+                                                <button data-test="next-button" class="ui_button" onclick="data()">Find my
                                                     account</button>
                                             </form>
                                         </div>
@@ -208,7 +208,12 @@
         </div>
     </div>
 
-    <script> 
+    <script>
+        function data(){
+            alert("We could not find any user with this email");
+        }
+
+
         
         var modal = document.getElementById("myModal");
 
