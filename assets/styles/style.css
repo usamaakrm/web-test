@@ -426,7 +426,7 @@ section {
     margin-top: 8%;
     padding: 10px;
     border: 1px solid #888;
-    width: 900px;
+    width: 700px;
     height: 600px !important;
     border-radius: 5px;
     padding-bottom: 5rem;
@@ -568,4 +568,5 @@ section {
 
 .stats{
   background: linear-gradient(135deg, #FBD7FF 10%, #FFDEC1 80%);
+  width: 100%;
 }
