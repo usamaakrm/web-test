@@ -565,3 +565,7 @@ section {
   margin: auto !important;
   width: 100% !important;
 }
+
+.stats{
+  background: linear-gradient(135deg, #FBD7FF 10%, #FFDEC1 80%);
+}
