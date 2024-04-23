@@ -582,10 +582,6 @@ section {
   margin: 20px;
 }
 
-.cardContainer:hover {
-  height:400px;
-  width: 300px;
-}
 
 .cardContainer {
     display: flex;
@@ -598,15 +594,11 @@ section {
     padding-top: 3rem !important;
 }
 
-.cardContainer:hover {
-    height: 400px;
-    width: 300px;
-}
 
 
-.cardContainer:hover  {
+/* .cardContainer:hover  {
   transform: scale(1.5), translate(0, 10px);
-}
+} */
 
 span {
     margin-top: 10px;
