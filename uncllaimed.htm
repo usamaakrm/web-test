@@ -41,92 +41,148 @@
 
     </div>
 
-    <section class="product-section mt-5 pt-5">
+    
+
+    <section class="product-section">
+
+            <div class="container">
+    
+                <h2 class="text-center fw-bold">Which sector owes you money?</h2>
+    
+                <div class="row justify-content-center mt-3">
+    
+                    <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+    
+                        <div class="card ">
+                            
+                            <img src="./assets/images/financial-institute.svg" alt="">
+                            
+                            <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Bussiness
+                              </button>
+    
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                              This panel is hidden by default.
+                            </div>
+                          </div>
+    
+                    </div>
+    
+                    <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+    
+                        <div class="card">
+                            
+                            <img src="./assets/images/lock.svg" alt="">
+                            
+                            <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                Personal
+                              </button>
+    
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                              The user activates the relevant trigger.
+                            </div>
+                          </div>
+    
+                    </div>
+    
+                    <!-- <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+    
+                        <div class="card">
+                            
+                            <img src="./assets/images/community.png" alt="">
+                            
+                            <h5 class="mt-4"> Community </h5>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+    
+                        <div class="card">
+                            
+                            <img src="./assets/images/education.png" alt="">
+                            
+                            <h5 class="mt-4"> Education </h5>
+    
+                        </div>
+    
+                    </div> -->
+    
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+    
+                        <div class="card">
+                            
+                            <img src="./assets/images/government.svg" style="padding-bottom: 6px;" alt="">
+                            
+                            <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                Real Estate
+                              </button>
+    
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                              Content for the collapse component.
+                            </div>
+                          </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    </section>
+
+    <section class="product-section">
 
         <div class="container">
 
-            <h2 class="text-center fw-bold mt-5 pt-5">Which sector owes you money?</h2>
-
-            <div class="row justify-content-center mt-3">
-
-                <div class="col-lg-4 col-md-3 col-sm-6 assetClick cardContainer">
-
-                    <div class="card alter">
-                        
-                        <img src="./assets/images/financial-institute.svg" alt="">
-                        
-                        <h5 class="mt-4"> Business </h5>
-                   </div>
-                   <div class="info">
-                    <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                      unchanged.
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-sm-6 assetClick cardContainer">
-
-                    <div class="card alter">
-                        
-                        <img src="./assets/images/lock.svg" alt="">
-                        
-                        <h5 class="mt-4"> Personal </h5>
-
-                    </div>
-                    <div class="info">
-                        <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                          unchanged.
-                      </div>
-
-                </div>
-
-                <!-- <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
-
-                    <div class="card">
-                        
-                        <img src="./assets/images/community.png" alt="">
-                        
-                        <h5 class="mt-4"> Community </h5>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
-
-                    <div class="card">
-                        
-                        <img src="./assets/images/education.png" alt="">
-                        
-                        <h5 class="mt-4"> Education </h5>
-
-                    </div>
-
-                </div> -->
-
-                
-                <div class="col-lg-4 col-md-3 col-sm-6 assetClick cardContainer">
-
-                    <div class="card alter">
-                        
-                        <img src="./assets/images/government.svg" style="padding-bottom: 6px;" alt="">
-                        
-                        <h5 class="mt-4"> Real Estate </h5>
-
-                    </div>
-                    <div class="info">
-                        <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                          unchanged.
-                      </div>
-
-                </div>
-
-                
-            </div>
-
+    <div class="d-flex sam">
+    <div class="cards" onclick="this.classList.toggle('expanded')">
+                    <img src="./assets/images/financial-institute.svg" width="70" style="padding-bottom: 6px;">
+                   <h5>Business</h5>
+        <div class="text1">
+          <div class="text-content">
+            <div class="body-text mt-5">are delivered with the same high quality as decades ago</div>
+          </div>
         </div>
-    </section>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+      </div>
+    
+    
+    
+      <div class="cards" onclick="this.classList.toggle('expanded')">
+                    <img src="./assets/images/lock.svg" width="70" style="padding-bottom: 6px;">
+                   <h5>Business</h5>
+        <div class="text1">
+          <div class="text-content">
+            <div class="body-text mt-5">are delivered with the same high quality as decades ago</div>
+          </div>
+        </div>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+      </div>
+      
+      
+      <div class="cards" onclick="this.classList.toggle('expanded')">
+                    <img src="./assets/images/government.svg" width="70" style="padding-bottom: 6px;">
+                   <h5>Business</h5>
+                   <div class="text1">
+                       <div class="text-content">
+            <div class="body-text mt-5">are delivered with the same high quality as decades ago</div>
+          </div>
+        </div>
+        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30"><path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5"/></svg>
+      </div>
+    </div>
+    </div>
+</div></section>
 
-
+      
     <div class="px-5 container stats">
         <div class="flex py-5 mb-5 ">
             <div class="item-count">
@@ -144,7 +200,6 @@
                 <h4 class="width">returned by state anually</h4>
             </div></div>
 
-</div>
 
 
     <div class="container">

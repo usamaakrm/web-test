@@ -571,60 +571,89 @@ section {
   width: 100%;
 }
 
-
-.cardContainer {
-  display: flex; 
-  flex-direction: column;
-  color: #4C4C4C;
-  height: 500px;
-  width: 300px;
-  transition: all .5s ease-out;
-  margin: 20px;
-}
-
-
-.cardContainer {
-    display: flex;
-    flex-direction: column;
-    color: #4C4C4C;
-    font-size: 100px;
-    font-family: sans-serif;
-    transition: all .5s ease-out;
-    margin: auto 20px;
-    padding-top: 3rem !important;
-}
-
-
-
-/* .cardContainer:hover  {
-  transform: scale(1.5), translate(0, 10px);
-} */
-
-
-.info {
-    font-size: 15px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: grey;
-    background-color: black !important;
-    height: 220px;
-    width: 300px;
-    z-index: -1;
-    transition: all .5s ease-out;
-    padding-top: 8rem;
-    border-radius: 30px;
-}
-
-.cardContainer:hover .info {
-    transform: translate(0px, 200px);
-}
-
-.alter{
-  width: 300px !important;
-  height: 280px;
-  align-items: center !important;
+.cards {
+  background: #F7F7F7;
+  border-radius: 8px;
   cursor: pointer;
+  height: 270px;
+  margin: 10px;
+  padding: 70px 20px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.025);
+  text-align: center;
+  transition: height 1000ms;
+  width: 180px;
+
+}
+@media (max-width: 767px) {
+  .cards {
+    left: calc(50% - 20px);
+    transform: translateX(-50%);
+  }
+}
+.cards.expanded {
+  height: 350px;
+  padding: 30px 5px;
+  transition: .5s ease-in-out;
+}
+.label {
+  margin-top: 30px;
+  transform: translateY(10px);
+  transition: transform 1000ms;
+}
+.cards.expanded .label {
+  transform: translateY(0);
+}
+.text1 {
+  clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  transition: clip-path 1000ms;
+  opacity: 0;
+}
+.cards.expanded .text1 {
+  clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+  opacity: 1;
+}
+.text2 {
+  clip-path: polygon(0% 100%,0% -80%,15% -70%,17.23% -53.59%,23% -40%,27.23% -28.94%,35% -20%,41.09% -13.59%,50% -10%,58.91% -13.23%,65% -20%,72.77% -28.23%,77% -40%,82.77% -54.65%,85% -70%,100% -80%,100% 100%);
+  -webkit-clip-path: polygon(0% 100%,0% -80%,15% -70%,17.23% -53.59%,23% -40%,27.23% -28.94%,35% -20%,41.09% -13.59%,50% -10%,58.91% -13.23%,65% -20%,72.77% -28.23%,77% -40%,82.77% -54.65%,85% -70%,100% -80%,100% 100%);
+  transition: clip-path 1000ms;
+  opacity: 0;
+}
+.cards.expanded .text2 {
+  clip-path: polygon(0% 100%,0% -90%,15% -80%,17.23% -63.59%,23% -50%,27.23% -38.94%,35% -30%,41.09% -23.59%,50% -20%,58.91% -23.23%,65% -30%,72.77% -38.23%,77% -50%,82.77% -64.65%,85% -80%,100% -90%,100% 100%);
+  -webkit-clip-path: polygon(0% 100%,0% -90%,15% -80%,17.23% -63.59%,23% -50%,27.23% -38.94%,35% -30%,41.09% -23.59%,50% -20%,58.91% -23.23%,65% -30%,72.77% -38.23%,77% -50%,82.77% -64.65%,85% -80%,100% -90%,100% 100%);
+  opacity: 1;
+}
+.text-content {
+  transform: translateY(-160px);
+  transition: transform 1000ms;
+}
+.cards.expanded .text-content {
+  transform: translateY(-15px);
+}
+.chevron {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  transform-origin: 50%;
+  transform: rotate(180deg);
+  transition: transform 1000ms;
+}
+.cards.expanded .chevron {
+  transform: rotate(0deg);
+}
+.title {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 900;
+  margin: 20px 0 12px;
+}
+.body-text {
+  padding: 0 5px;
+  font-size: 1rem;
+}
+
+.sam{
+  justify-content: center !important;
 }
