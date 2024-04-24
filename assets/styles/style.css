@@ -602,14 +602,37 @@ section {
   }
 
   .d-flex{
-     margin: 1rem !important;
+     margin: 1rem 0 !important;
      justify-content: center !important;
     }
 
     .dash{
-
-      margin-left: 3rem !important;
+      margin-left: 0rem !important;
     }
+
+    .count-bottom{
+      justify-content: center !important;
+      padding: 0rem !important;
+      margin: 0rem !important;
+    }
+
+    .item-count{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+
+
+    .width{
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      text-align: center !important;
+      margin-top: -2rem !important;
+    }
+
+
 
     body{
       width: 100% !important;
