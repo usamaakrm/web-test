@@ -705,3 +705,40 @@ section {
 .sam{
   justify-content: center !important;
 }
+
+.message-box {
+  position: relative;
+  top: 0px;
+  margin: 0;
+  padding: 20px 10px;
+  width: 190px;
+  height: 100px;
+  border-radius: 15px;
+  background: #555;
+  color: white;
+  transition: .3 ease-out;
+}
+
+.message-box:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  content: "";
+  border: solid transparent;
+	border-bottom-color: #555;
+	border-width: 10px;
+  transition: .3 ease-out;
+}
+
+.message {
+  background-color: #333;
+  color: #A4F4A4;
+  font-family: Chalkboard;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3 ease-out;
+}
