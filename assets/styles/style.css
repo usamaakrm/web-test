@@ -557,7 +557,11 @@ section {
 }
 
 .logo-pop{
-  margin-left: -5rem !important;
+  position: absolute;
+  right: 0;
+  width: 250px;
+  margin: 2rem;
+  margin-top: -3rem;
 }
 
 .count-section{
@@ -643,6 +647,28 @@ section {
       width: 100%;
       margin-left: auto !important;
       margin-right: auto !important;
+    }
+
+    .abt-flex{
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-pop{
+      right: 2rem;
+      margin: 0rem;
+      margin-top: 0rem;
+    }
+    
+    .abt-content{
+      width: 100% !important;
+    }
+    
+    .abt-img img{
+      width: 100%;
+    }
+    .abt-img{
+      width: 100%;
     }
   }
 .cards.expanded {
@@ -747,4 +773,26 @@ section {
   text-align: center;
   text-transform: uppercase;
   transition: .3 ease-out;
+}
+
+/* .stat-color{
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+} */
+
+.abt-flex{
+  justify-content: space-between;
+}
+
+
+.abt-content{
+  width: 50%;
+}
+
+.abt-img img{
+  width: 450px;
+}
+.abt-img{
+  width: 40%;
 }

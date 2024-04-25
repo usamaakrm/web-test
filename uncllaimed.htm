@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - USA Funding Applications</title>
     <!-- Bootstrap 5 styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Fontawesome icon--->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- External style sheet ref -->
     <link rel="stylesheet" href="./assets/styles/style.css">
     <!-- Font file -->
@@ -15,22 +18,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <!-- External script ref -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script> 
-        $(function(){
+    <script>
+        $(function () {
             $("#navbar").load("navbar.htm");
             $("#footer").load("footer.htm");
             setTimeout(() => {
                 $('.navbar-nav .nav-item').removeClass('active');
                 // change menu active class
                 var url = window.location.href.split('/');
-                $(`a[href="${url[url.length-1]}"]`).addClass('active');
+                $(`a[href="${url[url.length - 1]}"]`).addClass('active');
 
-            }, 100);            
+            }, 100);
         });
-    </script> 
+    </script>
 </head>
 
 <body>
@@ -41,55 +46,57 @@
 
     </div>
 
-    
+
 
     <section class="product-section pt-5 mt-5">
 
-            <div class="container mt-5">
-    
-                <h2 class="text-center fw-bold">Which sector owes you money?</h2>
-    
-                <div class="row justify-content-center mt-3">
-    
-                    <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
-    
-                        <div class="card ">
-                            
-                            <img src="./assets/images/financial-institute.svg" alt="">
-                            
-                            <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                Bussiness
-                              </button>
-    
-                        </div>
-                        <div class="collapse message-box" id="collapseExample">
-                            <div class="alert-card">
-                              This panel is hidden by default.
-                            </div>
-                          </div>
-    
+        <div class="container mt-5">
+
+            <h2 class="text-center fw-bold">Which sector owes you money?</h2>
+
+            <div class="row justify-content-center mt-3">
+
+                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+
+                    <div class="card ">
+
+                        <img src="./assets/images/financial-institute.svg" alt="">
+
+                        <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Bussiness
+                        </button>
+
                     </div>
-    
-                    <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
-    
-                        <div class="card">
-                            
-                            <img src="./assets/images/lock.svg" alt="">
-                            
-                            <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                                Personal
-                              </button>
-    
+                    <div class="collapse message-box" id="collapseExample">
+                        <div class="alert-card">
+                            This panel is hidden by default.
                         </div>
-                        <div class="collapse message-box" id="collapseExample2">
-                            <div class="alert-card">
-                              The user activates the relevant trigger.
-                            </div>
-                          </div>
-    
                     </div>
-    
-                    <!-- <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+
+                    <div class="card">
+
+                        <img src="./assets/images/lock.svg" alt="">
+
+                        <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            Personal
+                        </button>
+
+                    </div>
+                    <div class="collapse message-box" id="collapseExample2">
+                        <div class="alert-card">
+                            The user activates the relevant trigger.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
     
                         <div class="card">
                             
@@ -112,83 +119,87 @@
                         </div>
     
                     </div> -->
-    
-                    
-                    <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
-    
-                        <div class="card">
-                            
-                            <img src="./assets/images/government.svg" style="padding-bottom: 6px;" alt="">
-                            
-                            <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                                Real Estate
-                              </button>
-    
-                        </div>
-                        <div class="collapse message-box" id="collapseExample3">
-                            <div class="alert-card ">
-                              Content for the collapse component.
-                            </div>
-                          </div>
-    
+
+
+                <div class="col-lg-2 col-md-3 col-sm-6 assetClick">
+
+                    <div class="card">
+
+                        <img src="./assets/images/government.svg" style="padding-bottom: 6px;" alt="">
+
+                        <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                            Real Estate
+                        </button>
+
                     </div>
-    
+                    <div class="collapse message-box" id="collapseExample3">
+                        <div class="alert-card ">
+                            Content for the collapse component.
+                        </div>
+                    </div>
+
                 </div>
-    
+
             </div>
+
+        </div>
     </section>
 
-      
-    <div class="px-5 container stats">
-        <div class="flex py-5 mb-5 ">
-            <div class="item-count">
-                <div class="d-flex  dash">
-                    <h1>1 in </h1>
-                    <h1 class="count start mx-3"> 26</h1>
+    <div class="stats">
+        <div class="container stats stat-color">
+            <div class="flex py-5 mb-5 ">
+                <div class="item-count">
+                    <div class="d-flex  dash">
+                        <h1>1 in </h1>
+                        <h1 class="count start mx-2">26</h1>
+                    </div>
+                    <h4 class="width">has unclaimed property</h4>
                 </div>
-               <h4 class="width">has unclaimed property</h4>
+                <div class="item-count">
+                    <div class="d-flex dash">
+                        <h1>$</h1>
+                        <h1 class="count start"> 400000</h1>
+                    </div>
+                    <h4 class="width">returned by state anually</h4>
+                </div>
             </div>
-            <div class="item-count">
-                <div class="d-flex dash">
-                    <h1>$</h1>
-                    <h1 class="count start"> 400000</h1>
-                </div>
-                <h4 class="width">returned by state anually</h4>
-            </div></div></div>
+        </div>
+    </div>
 
 
 
 
-<script>
-    function counter(){   
-        $('.count').each(function(){
-            if ($(this).hasClass('start')){
-                var elementTop = $(this).offset().top;
-                var elementBottom = elementTop + $(this).outerHeight();
-                var viewportTop = $(window).scrollTop();
-                var viewportBottom = viewportTop + $(window).height();
-                if(elementBottom > viewportTop && elementTop < viewportBottom){                               
-                    if(($(this).text()) % 1 === 0){
-                        var decimalpoint = 0;
-                    }else{
-                        var decimalpoint = ($(this).text()).toString().split(".")[1].length;
-                    }
-                    $(this).removeClass('start');
-                    $(this).animate({
-                        Counter: $(this).text()
-                    },{
-                        duration: 4000,
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(now.toFixed(decimalpoint).toLocaleString('en'));
+    <script>
+        function counter() {
+            $('.count').each(function () {
+                if ($(this).hasClass('start')) {
+                    var elementTop = $(this).offset().top;
+                    var elementBottom = elementTop + $(this).outerHeight();
+                    var viewportTop = $(window).scrollTop();
+                    var viewportBottom = viewportTop + $(window).height();
+                    if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                        if (($(this).text()) % 1 === 0) {
+                            var decimalpoint = 0;
+                        } else {
+                            var decimalpoint = ($(this).text()).toString().split(".")[1].length;
                         }
-                    });
+                        $(this).removeClass('start');
+                        $(this).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 4000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(now.toFixed(decimalpoint).toLocaleString('en'));
+                            }
+                        });
+                    }
                 }
-            }
-        });
-    }
-    $(document).on('ready', counter);
-    $(window).on('scroll', counter);
-</script>
-<div id="footer"></div>
+            });
+        }
+        $(document).on('ready', counter);
+        $(window).on('scroll', counter);
+    </script>
+    <div id="footer"></div>
 </body>
