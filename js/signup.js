@@ -43,3 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
       alert('Approved! We will contact you within 48 hours to fulfill your requirement');
     });
   });
+
+  $(".show-more").click(function () {
+    if($(".text").hasClass("show-more-height")) {
+        $(this).text("(Show Less)");
+    } else {
+        $(this).text("(Show More)");
+    }
+
+    $(".text").toggleClass("show-more-height");
+});
