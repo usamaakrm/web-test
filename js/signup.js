@@ -53,3 +53,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(".text").toggleClass("show-more-height");
 });
+
+$(document).ready(function(){
+  var hiddenSection = document.getElementById('hidden-section-data');
+  hiddenSection.style.display = 'none';
+
+ var btn = document.getElementById("showHide");
+
+
+// When the user clicks the button, open the modal 
+ btn.onclick = function() {
+  var hiddenSection = document.getElementById('hidden-section-data');
+  if( hiddenSection.style.display == "none") {
+      hiddenSection.style.display = 'block';  
+      document.getElementById("showHide").innerHTML = '<a id="showHide"> <p class="border-bottom border-2 text-center border-secondary mx-auto mt-2" style="width: fit-content;color: #5479F7;">Show less</p> </a>';
+  } else {
+      hiddenSection.style.display = 'none';
+      document.getElementById("showHide").innerHTML = '<a id="showHide"> <p class="border-bottom border-2 text-center border-secondary mx-auto mt-2" style="width: fit-content;color: #5479F7;">Show More</p> </a>';
+
+  }
+ }   
+ var elements = document.getElementsByClassName("assetClick");
+
+ var myFunction = function() {
+       
+   window.location.href = "uncllaimed.htm"
+ };
+
+ for (var i = 0; i < elements.length; i++) {
+     elements[i].addEventListener('click', myFunction, false);
+ }
+
+
+});
