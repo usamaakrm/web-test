@@ -656,6 +656,7 @@ section {
       width: 100%;
       margin-left: auto !important;
       margin-right: auto !important;
+      left: 0 !important;
     }
 
     .abt-flex{
@@ -790,9 +791,10 @@ section {
   position: relative;
   top: 0px;
   margin: 0;
-  padding: 20px 10px;
-  width: 190px;
-  height: 100px;
+  left: -40%;
+  padding: 20px 20px;
+  width: 290px;
+  height: 200px;
   border-radius: 15px;
   background: #555;
   color: white;
