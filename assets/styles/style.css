@@ -272,7 +272,7 @@ section {
     padding: 0 50px 0 15px;
     transition: .3s opacity, .6s max-height;
     hyphens: auto;
-    z-index: 2;
+    z-index: 0;
   }
   
   #faq ul {
@@ -967,12 +967,15 @@ section {
   padding: 0 25%;
 }
 
-#m3{
-  display: none !important;
-}
-#m2{
-  display: none !important;
-}
-#m1{
-  display: none !important;
+#sec1, #sec2, #sec3{
+  display: none ;
+  background-color: #333;
+  color: white;
+  text-align: left;
+  transition: .3 ease-out;
+  padding: 2rem;
+  margin-left: 20px;
+  margin-top: -80px;
+  font-weight: 400 !important;
+  border-radius: 20px;
 }
