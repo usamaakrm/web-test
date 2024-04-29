@@ -62,15 +62,29 @@
 
                         <img src="./assets/images/banking.svg" alt="">
 
-                        <button class="btn btn-dark mt-4" type="button" data-bs-toggle="collapse"
+                        <button class="btn btn-dark mt-4" type="button" onclick="one()" data-bs-toggle="collapse"
                             data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             Banking
                         </button>
 
                     </div>
-                    <div class="collapse message-box" id="collapseExample">
-                        <div class="alert-card">
-                            This panel is hidden by default.
+                    <div class="collapse message-box " id="collapseExample">
+                        <div class="alert-card m1">
+                            When discussing unclaimed assets in the private sector, we often refer to financial resources held by private entities such as corporations, insurance companies, or other organizations outside of government oversight. Private unclaimed assets can take various forms and arise from different circumstances:
+
+Unclaimed Insurance Policies: Life insurance policies or other types of insurance benefits can become unclaimed assets if beneficiaries are unaware of the policy or fail to file a claim after the policyholder's death.
+
+Unclaimed Retirement Accounts: Retirement funds, such as pensions or 401(k) accounts, can become unclaimed if individuals change jobs or lose track of their savings.
+
+Unclaimed Stocks and Dividends: Shareholders who fail to claim dividends or do not cash in stock certificates can lead to unclaimed assets within the corporate sector.
+
+Unclaimed Refunds and Rebates: Companies issue refunds or rebates to customers, which can remain unclaimed if recipients do not cash their checks or claim owed amounts.
+
+Abandoned Property: Private businesses may hold abandoned property or assets, such as uncollected merchandise, security deposits, or unused gift cards, which can become unclaimed over time.
+
+Private entities are legally required to maintain records of unclaimed assets and report them to relevant regulatory authorities or state agencies. They attempt to notify individuals with unclaimed assets through email and SMS, providing instructions on how to claim them. Each state or jurisdiction has specific rules regarding how long assets must remain unclaimed before they are considered abandoned and subject to transfer to state custody.
+
+If rightful owners cannot be located within the specified timeframe, private entities transfer unclaimed assets to state custody as required by law. Individuals who believe they are entitled to unclaimed assets held by private entities can usually file a claim with the relevant state agency or directly with the company holding the assets. Once a valid claim is processed and verified, the assets are returned to the rightful owner or their designated beneficiaries
                         </div>
                     </div>
 
@@ -82,14 +96,14 @@
 
                         <img src="./assets/images/private-profile.svg" alt="">
 
-                        <button class="btn btn-dark mt-4" type="button" data-bs-toggle="collapse"
+                        <button class="btn btn-dark mt-4" type="button" onclick="two()" data-bs-toggle="collapse"
                             data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                             Private
                         </button>
 
                     </div>
-                    <div class="collapse message-box" id="collapseExample2">
-                        <div class="alert-card">
+                    <div class="collapse message-box " id="collapseExample2">
+                        <div class="alert-card " id="m2"> 
                             Government
 Within the framework of the USA Funding Application, unclaimed assets held by governments encompass a diverse array of financial resources that have not been claimed by their rightful owners within a specified period. These assets range from dormant bank accounts and forgotten insurance policies to abandoned safety deposit boxes, uncashed checks, and more.
 
@@ -135,21 +149,20 @@ Disposition of Unclaimed Assets: In accordance with the USA Funding Application 
     
                     </div> -->
 
-
                 <div class="col-lg-2 col-md-3 col-sm-6 assetClick assetClicked">
 
                     <div class="card">
 
                         <img src="./assets/images/government.svg" style="padding-bottom: 6px;" alt="">
 
-                        <button class="btn btn-dark mt-4" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                        <button class="btn btn-dark mt-4" type="button" onclick="three()"  data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" >
                             Government
                         </button>
 
                     </div>
                     <div class="collapse message-box" id="collapseExample3">
-                        <div class="alert-card ">
+                        <div class="alert-card" id="m3">
 Within the framework of the USA Funding Application, unclaimed assets held by governments encompass a diverse array of financial resources that have not been claimed by their rightful owners within a specified period. These assets range from dormant bank accounts and forgotten insurance policies to abandoned safety deposit boxes, uncashed checks, and more.
 
 Governments establish procedures and laws outlined in the USA Funding Application to responsibly manage unclaimed assets with the primary goal of safeguarding them until they can be reunited with their rightful owners or heirs. The process, as detailed within the USA Funding Application, typically involves the following key steps:
@@ -229,6 +242,23 @@ Disposition of Unclaimed Assets: In accordance with the USA Funding Application 
         }
         $(document).on('ready', counter);
         $(window).on('scroll', counter);
+
+
+        function two(){
+            document.getElementById("m2").style.display="block !important";
+            document.getElementById("m1").style.display="none !important";
+            document.getElementById("m3").style.display="none !important";
+          }
+          function one(){
+            document.getElementById("m1").style.display="block";
+            document.getElementById("m2").style.display="none";
+            document.getElementById("m3").style.display="none";
+          }
+          function three(){
+            document.getElementById("m3").style.display="block";
+            document.getElementById("m1").style.display="none";
+            document.getElementById("m2").style.display="none";
+          }
     </script>
     <div id="footer"></div>
 </body>

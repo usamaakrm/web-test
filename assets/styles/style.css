@@ -572,7 +572,8 @@ section {
   right: 0;
   width: 250px;
   margin: 2rem;
-  margin-top: 3rem;
+  margin-top: 0rem;
+  margin-right: 4rem;
 }
 
 .count-section{
@@ -669,7 +670,7 @@ section {
     .logo-pop{
       right: 2rem;
       margin: 0rem;
-      margin-top: 0rem;
+      margin-top: -7rem;
     }
     
     .abt-content{
@@ -808,7 +809,7 @@ section {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -60px;
   content: "";
   border: solid transparent;
 	border-bottom-color: #555;
@@ -940,13 +941,17 @@ section {
 .coloring{
   color: grey !important;
   background-color: white !important;
+  
 }
 
 .custom-select{
   width: 80% !important;
+  height: 35px !important;
   border: none !important;
   margin-left: 2rem !important;
   outline: none !important;
+  position: absolute;
+  right: 0 !important;
 }
 
 .ohh{
@@ -956,4 +961,18 @@ section {
 .pp li{
   list-style: disc !important;
   margin-left: 1.5rem;
+}
+
+.delta{
+  padding: 0 25%;
+}
+
+#m3{
+  display: none !important;
+}
+#m2{
+  display: none !important;
+}
+#m1{
+  display: none !important;
 }
