@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // If all validations pass, submit the form
       // You may also choose to submit the form using AJAX here
       // form.submit();
-      alert('Approved! We will contact you within 48 hours to fulfill your requirement');
+      alert('Thank you for your cooperation. We are currently processing your case and will be in touch promptly. If we require any additional information, such as proof of ownership, we will contact you accordingly. We appreciate your patience and assistance.');
     });
   });
 
